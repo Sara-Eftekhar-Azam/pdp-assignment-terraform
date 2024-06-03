@@ -44,6 +44,7 @@ jobs:
           name: python-app
           path: |
             # ./code/backend/release.zip
+            release.zip
             !venv/
 
   deploy:
@@ -76,6 +77,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'rooftile-backend-flask'
+          app-name: 'pdp-backend-flask'
           slot-name: 'Production'
           
